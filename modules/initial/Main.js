@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   logo:{
     marginBottom:230,
-    opacity:.6,
+    opacity:.7,
     width: '110%',
     transform: [
       { rotateZ: '-15deg'},
