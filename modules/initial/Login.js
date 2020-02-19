@@ -3,8 +3,6 @@ import { View, Text, ImageBackground, StyleSheet, Image, TextInput, TouchableOpa
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-
-
 export default class Login extends React.Component {
     constructor(props){
         super(props);
