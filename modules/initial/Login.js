@@ -59,10 +59,10 @@ export default class Login extends React.Component {
     render() {
         return (
             <ImageBackground source={require('../../images/fondocasa.jpg')} style={styles.Container}>
+                    <View style={styles.logo}>
+                              <Image  style={styles.imagelogo} source={require('../../images/LogoInMobileApp.png')} />
+                    </View>
                     <View style={styles.formu}>
-                        
-                            <Image  style={styles.imagelogo} source={require('../../images/inmobileapp.jpg')} />
-                        
                         <TextInput style ={styles.inputemail}
                             placeholderTextColor="rgba(255, 255,255, 0.7)"
                             autoCapitalize="none"
@@ -84,7 +84,7 @@ export default class Login extends React.Component {
                             onChangeText={(pass)=>this.setState({pass:pass})}
                             value={this.setState.pass}
                             secureTextEntry={true}
-                            maxLength={10}
+                            maxLength={30}
                         />
                     </View>
                     <View style={styles.button}>
@@ -105,19 +105,21 @@ const styles= StyleSheet.create({
         flex:1,
         alignContent:'flex-end',
     },
+    logo:{
+      flex:2,
+      justifyContent: 'flex-end',
+      alignItems:'center',
+      alignContent: 'center',
+    },
     imagelogo:{
-        marginBottom:130,
-        opacity:.7,
-        width: '110%',
-        transform: [
-          { rotateZ: '-15deg'},
-    
-        ],
+        width: '95%',
+        height:'100%',
       },
     formu:{
-        flex:3,
+        flex:1,
         justifyContent: 'flex-end',
-        alignItems:'center'
+        alignItems:'center',
+        alignContent: 'center'
     },
     inputemail:{
         width: '80%',

@@ -9,7 +9,7 @@ function Main({ navigation }) {
         
           <View style={styles.background}>
               <ImageBackground source={require('../../images/background.jpg')} style={styles.ImageBackground}>
-              <Image  style={styles.logo} source={require('../../images/inmobileapp.jpg')} />
+              <Image  style={styles.logo} source={require('../../images/Welcome_InMobileApp.png')} />
               <TouchableOpacity
                 style={styles.buttonSignUp}
                 onPress={() => navigation.navigate('SignUp')}
@@ -35,13 +35,9 @@ const styles = StyleSheet.create({
     flex:1
   },
   logo:{
-    marginBottom:230,
-    opacity:.7,
-    width: '110%',
-    transform: [
-      { rotateZ: '-15deg'},
-
-    ],
+    marginBottom:200,
+    width: '90%',
+    height:'30%',
   },
   ImageBackground:{
     width: '100%',
