@@ -54,6 +54,8 @@ export default class Login extends React.Component {
                     {cancelable: false},
                   );
             }
+            this.props.navigation.navigate('MainScreen')
+            
         }
   
     render() {

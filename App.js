@@ -10,24 +10,16 @@ import MainScreen from './modules/mainScreen/MainScreen';
 
 const Stack = createStackNavigator();
 
-function rootMain() {
-  return (
-    <Stack.Navigator>
-      <Stack.Screen name="MainScreen" component={MainScreen} />
-    </Stack.Navigator>
-  );
-}
-
 export default class App extends React.Component {
   render() {
     return (
       <NavigationContainer>
-        <Stack.Navigator headerMode="none">
-          <Stack.Screen name="Splash" component={Splash} />
+        <Stack.Navigator headerMode="none" >
+          <Stack.Screen name="Splash" component={Splash}/>
           <Stack.Screen name="Main" component={Main} />
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="SignUp" component={SignUp} />
-          <Stack.Screen name="rootMain" component={rootMain} />
+          <Stack.Screen name="MainScreen" component={MainScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     );

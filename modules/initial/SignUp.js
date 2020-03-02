@@ -80,8 +80,8 @@ export default class SignUp extends React.Component {
                         </TouchableOpacity>
               </View>
               <View style={styles.icons}>
-                <Icon name="google" size={50} color="#1E9EE9"/>
-                <Icon name="facebook-square" size={50} color="#1E9EE9"/>
+                <Icon name="facebook-square" size={55} color="#1E9EE9"/>
+                <Image  style={styles.imageIcon} source={require('../../images/Google_Logo.svg.png')} />
               </View>
           </ImageBackground>
       );
@@ -99,8 +99,12 @@ const styles = StyleSheet.create({
         alignContent: 'flex-start'
     },
     imagelogo:{
-        width: '95%',
-        height:'100%'
+        width: '90%',
+        height: '100%'
+    },
+    imageIcon:{
+        width: 50,
+        height: 50
     },
     form:{
         flex:3,
